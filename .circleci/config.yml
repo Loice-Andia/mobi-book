@@ -40,3 +40,7 @@ jobs:
 
       - store_test_results:
           path: app/build/test-results
+
+      - run:
+          name: Post report to coveralls
+          command: - ./gradlew jacocoTestReport coveralls
