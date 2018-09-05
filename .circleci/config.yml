@@ -43,4 +43,4 @@ jobs:
 
       - run:
           name: Post report to coveralls
-          command: - ./gradlew jacocoTestReport coveralls
+          command: ./gradlew jacocoTestReport coveralls
